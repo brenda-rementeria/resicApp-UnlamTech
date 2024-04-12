@@ -22,3 +22,13 @@ La empresa proporciona las siguientes reglas para calcular el monto total a paga
 |                        |                                                                                                                        | Si compro un producto Platinum de $100 un día de semana, el monto total a pagar es de $100,75                                                                              |
 | Bronze                 | No aplica comisión                                                                                                    | -                                                                                                                                                                           |
 
+
+### Notas
+- No necesita implementar una interfaz grafica
+- No necesita hacer uso de una base de datos
+- Todas las reglas que la empresa usa para calcular el costo total fueron dadas anteriormente. No necesita aplicar ninguna otra regla
+
+### Requisitos técnicos
+- Hacer uso de herencia y polimorfismo.
+- Hacer uso de funciones lambda y/o acotadas.
+- Crear y hacer uso de al menos una excepción propia.
