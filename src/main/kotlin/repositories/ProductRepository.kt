@@ -160,7 +160,7 @@ object ProductRepository {
         )
 
     }
-    
+
     fun get() : List<Product> = products //Funcion compacta, devulve la lista con todos los productos
 
     fun getById(id: Long) : Product {
