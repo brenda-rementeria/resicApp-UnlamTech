@@ -160,13 +160,16 @@ object ProductRepository {
         )
 
     }
-
-    fun get() : List<Product> {
-        return emptyList() //TODO Implementar solucion para obtener todos los paquetes turisticos
-    }
+    
+    fun get() : List<Product> = products //Funcion compacta, devulve la lista con todos los productos
 
     fun getById(id: Long) : Product {
-        return products[0] //TODO Implementar solucion para obtener el paquete turistico solicitado
+        for ((index, product) in products.withIndex()){
+            if (id == product.id) {
+                return products[index] //Busca por ID y devuelve un producto
+            }
+        }
+        return products[0]
     }
 
 }

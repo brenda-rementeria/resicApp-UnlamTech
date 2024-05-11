@@ -23,8 +23,6 @@ object PurchaseRepository {
         //TODO Implementar solucion para agregar una nueva compra
     }
 
-    fun get() : List<Purchase> {
-        return emptyList() //TODO Implementar solucion para obtener todas las compras
-    }
+    fun get() : List<Purchase> = purchases //Funcion compacta, devuelve la lista de todas las compras
 
 }
