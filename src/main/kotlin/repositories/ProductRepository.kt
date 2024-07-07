@@ -160,13 +160,21 @@ object ProductRepository {
         )
 
     }
+    // Permite obtener productos filtrados por tipo
+    fun getProductsByType(type: ProductType): List<Product> {
+        return products.filter { it.type == type }
+    }
+    // Permite obtener productos filtrados por id
+    fun getProductById(productId: Long): Product? {
+        return products.find { it.id == productId }
+    }
 
-    fun get() : List<Product> = products //Funcion compacta, devulve la lista con todos los productos
+    fun get() : List<Product> = products
 
     fun getById(id: Long) : Product {
         for ((index, product) in products.withIndex()){
             if (id == product.id) {
-                return products[index] //Busca por ID y devuelve un producto
+                return products[index]
             }
         }
         return products[0]

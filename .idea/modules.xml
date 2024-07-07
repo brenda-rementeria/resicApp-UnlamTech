@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ResicApp.iml" filepath="$PROJECT_DIR$/ResicApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pruebagit.iml" filepath="$PROJECT_DIR$/pruebagit.iml" />
     </modules>
   </component>
 </project>
